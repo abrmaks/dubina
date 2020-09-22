@@ -1,6 +1,8 @@
 import React from 'react';
 import { HeaderContainer, Nav, Ul, LinkTo, Logo } from './styles';
 import { Container, Row } from '../../styles/commons';
+import newLogo from '../../assets/images/logo.png';
+
 
 
 const Header = () => {
@@ -9,7 +11,7 @@ const Header = () => {
             <Container>
                 <Row>
                     <Nav>
-                        <Logo>Logo</Logo>
+                        <Logo> <img src={newLogo} /> </Logo>
 
                         <Ul>
                             <li>
@@ -17,6 +19,9 @@ const Header = () => {
                             </li>
                             <li>
                                 <LinkTo to="/about">About</LinkTo>
+                            </li>
+                            <li>
+                                <LinkTo to="/contact">Contact</LinkTo>
                             </li>
                         </Ul>
                     </Nav>
